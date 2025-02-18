@@ -38,7 +38,7 @@ Custom Dataset Training – Uses a curated dataset for improved accuracy
 
 3. Download this 
 https://www.kaggle.com/datasets/raghavnanjappan/weapon-dataset-for-yolov5
-dataset and place it in the data/ directory
+dataset and place it in the data/ directory. (Has 4000 images)
 
 
 4. Train the model using the training script
@@ -50,7 +50,7 @@ dataset and place it in the data/ directory
 
 **Challenges & Issues**
 
-Low Confidence Scores (around 0.6) due to a small dataset, insufficient training epochs, or potential class labeling inconsistencies
+Low Confidence Scores (around 0.6) due to a limited training mainly insufficient training epochs(only 25)
 
 False Positives and False Negatives, leading to misclassifications or missed detections
 
@@ -59,15 +59,15 @@ Running on CPU results in slow inference, requiring GPU support for real-time pr
 
 **Future Improvements**
 
-Increase dataset size to improve model generalization
+Extend training duration and experiment with larger batch sizes for better model convergence.
 
-Fine-tune YOLOv5 hyperparameters such as learning rate, batch size, and epochs
+Fine-tune YOLOv5 hyperparameters, including learning rate and anchor sizes, to optimize detection accuracy.
 
-Add video stream support for real-time weapon detection in CCTV footage
+Incorporate real-time video stream processing for CCTV surveillance applications.
 
-Deploy as a web application using Flask or FastAPI
+Deploy as a web application using Flask or FastAPI for easy integration with security systems.
 
 
 **Conclusion**
 
-This project is an ongoing effort to develop an effective weapon detection system using YOLOv5. While the current model struggles with accuracy, improvements in data, training, and deployment can make it more reliable for real-world use.
+This project is an ongoing effort to build an effective weapon detection system using YOLOv5. While the current model faces accuracy challenges, improvements in dataset size, training strategies, and deployment can enhance its reliability for real-world security applications.
