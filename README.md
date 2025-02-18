@@ -32,6 +32,8 @@ Despite attempting to train and deploy the YOLOv5 model, the project faced chall
 - **False Negatives/False Positives**: Sometimes the model fails to detect weapons or misclassifies other objects as weapons.
 - **No GPU Acceleration**: The project currently runs on CPU, which significantly slows down inference.
 
+## **Data**
+dataset should be in data folder that you have to create on your own. The link for the kaggle dataset: https://www.kaggle.com/datasets/raghavnanjappan/weapon-dataset-for-yolov5
 ## **Future Improvements**
 
 - **Better Dataset**: Increase the quality and diversity of the training dataset, adding more variations of knives, handguns, and non-weapon objects.
