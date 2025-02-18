@@ -1,46 +1,71 @@
-# Weapon-Detection-system-using-YOLOv5
-Failed
+Weapon Detection System using YOLOv5
 
-## **Project Overview**
+This project implements a real-time weapon detection system using YOLOv5, designed to identify objects such as knives and handguns in images. The goal is to enhance surveillance and security by detecting potential threats in real-time.
 
-This project aims to implement a weapon detection system using YOLOv5 to identify objects such as knives and handguns in images. The goal was to leverage deep learning and computer vision to detect weapons in surveillance or security camera footage.
+Despite initial challenges with confidence scores (around 0.6) and misclassifications, this project serves as a foundation for future improvements in model accuracy, dataset quality, and real-time deployment.
 
-Despite attempting to train and deploy the YOLOv5 model, the project faced challenges, such as consistently low confidence levels (~0.6) and incorrect classification (e.g., failing to detect weapons or misclassifying them).
+Technologies Used
 
-## **Technologies Used**
+YOLOv5 – Object detection model for real-time weapon recognition
 
-- **YOLOv5**: A state-of-the-art object detection model built with PyTorch.
-- **Python 3.11**: The primary programming language used for the project.
-- **OpenCV**: For image processing and displaying results.
-- **PyTorch**: For training and running the YOLOv5 model.
-- **CUDA (optional)**: For GPU acceleration (though the current implementation uses CPU).
+Python 3.11 – The primary programming language
 
-## **Project Features**
+OpenCV – For image processing and visualization
 
-- **Weapon Detection**: The system attempts to detect knives and handguns in images.
-- **Alert System**: Triggers an alert when a weapon is detected, printing "Weapon detected!" to the console.
-- **Customizable Detection Classes**: Can be modified to detect other types of objects beyond weapons.
+PyTorch – For training and inference
 
-## **Known Issues**
+CUDA (optional) – For GPU acceleration
 
-- **Low Confidence**: The model often produces a consistent confidence of around 0.6, even when it successfully detects weapons. This issue could be due to several factors:
-  - Incorrect or insufficient training data.
-  - Model underfitting or poor generalization.
-  - Incorrect class labeling or dataset mismatch.
-- **False Negatives/False Positives**: Sometimes the model fails to detect weapons or misclassifies other objects as weapons.
-- **No GPU Acceleration**: The project currently runs on CPU, which significantly slows down inference.
 
-## **Data**
-dataset should be in data folder that you have to create on your own. The link for the kaggle dataset: https://www.kaggle.com/datasets/raghavnanjappan/weapon-dataset-for-yolov5
-## **Future Improvements**
+Project Features
 
-- **Better Dataset**: Increase the quality and diversity of the training dataset, adding more variations of knives, handguns, and non-weapon objects.
-- **Hyperparameter Tuning**: Experiment with different model architectures, learning rates, and batch sizes to improve detection performance.
-- **GPU Usage**: Ensure that the model uses GPU acceleration to speed up training and inference.
-- **Improved Postprocessing**: Investigate postprocessing techniques like non-maximum suppression (NMS) for better object localization.
+Weapon Detection – Identifies knives and handguns in images
 
-## **Conclusion**
+Bounding Box Visualization – Draws detection boxes on images
 
-While this project aimed to develop a weapon detection system using YOLOv5, it did not achieve the desired performance. The confidence values were often stuck at 0.6, resulting in inaccurate detection results. Further work is needed in refining the dataset, improving training parameters, and ensuring proper model deployment for real-world use.
+Alert System – Triggers a console alert if a weapon is detected
 
-Might pick this up later someday
+Custom Dataset Training – Uses a curated dataset for improved accuracy
+
+
+Installation & Usage
+
+1. Clone the repository
+
+
+2. Install dependencies from the requirements file
+
+
+3. Download the dataset and place it in the data/ directory
+
+
+4. Train the model using the training script
+
+
+5. Run detection on images
+
+
+
+Challenges & Issues
+
+Low Confidence Scores (around 0.6) due to a small dataset, insufficient training epochs, or potential class labeling inconsistencies
+
+False Positives and False Negatives, leading to misclassifications or missed detections
+
+Running on CPU results in slow inference, requiring GPU support for real-time processing
+
+
+Future Improvements
+
+Increase dataset size to improve model generalization
+
+Fine-tune YOLOv5 hyperparameters such as learning rate, batch size, and epochs
+
+Add video stream support for real-time weapon detection in CCTV footage
+
+Deploy as a web application using Flask or FastAPI
+
+
+#**Conclusion**
+
+This project is an ongoing effort to develop an effective weapon detection system using YOLOv5. While the current model struggles with accuracy, improvements in data, training, and deployment can make it more reliable for real-world use.
