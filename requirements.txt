@@ -1,0 +1,4 @@
+torch
+opencv-python
+yolov5
+scikit-learn
