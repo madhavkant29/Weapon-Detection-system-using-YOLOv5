@@ -1,7 +1,5 @@
 # Weapon-Detection-system-using-YOLOv5
 Failed
-Here's a version of the README without code snippets, formatted for TTP (Text to Text Processing):
-
 
 ## **Project Overview**
 
