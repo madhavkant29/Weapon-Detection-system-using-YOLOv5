@@ -36,7 +36,9 @@ Custom Dataset Training – Uses a curated dataset for improved accuracy
 2. Install dependencies from the requirements file
 
 
-3. Download the dataset and place it in the data/ directory
+3. Download this 
+https://www.kaggle.com/datasets/raghavnanjappan/weapon-dataset-for-yolov5
+dataset and place it in the data/ directory
 
 
 4. Train the model using the training script
