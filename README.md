@@ -65,7 +65,7 @@ Fine-tune YOLOv5 hyperparameters, including learning rate and anchor sizes, to o
 
 Incorporate real-time video stream processing for CCTV surveillance applications.
 
-Deploy as a web application using Flask or FastAPI for easy integration with security systems.
+Deploy as a web application using FastAPI for easy integration with security systems.
 
 
 **Conclusion**
