@@ -10,14 +10,14 @@ def train_yolo():
         "yolov5s.pt"
     )  # Load the YOLOv5 small model (use "yolov5s" for faster training)
     model.train(
-        data=r"data\dataset.yaml",  # Correct path to dataset.yaml using raw string
-        epochs=25,  # Fewer epochs for faster training
-        imgsz=416,  # Reduced image size for faster training (can try 416 for balance)
+        data=r"data\dataset.yaml", 
+        epochs=25, 
+        imgsz=416,  
         batch=16,  # Increased batch size for faster training
-        cache=False,  # Avoid caching to save time
+        cache=False,  # Avoided caching to save time
         device="cuda",  # Using GPU
-        half=True,  # Mixed precision to speed up training and reduce memory usage
-        workers=4,  # Increased number of workers to load data faster
+        half=True, 
+        workers=4,  
     )
 
 
