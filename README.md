@@ -1,10 +1,10 @@
-Weapon Detection System using YOLOv5
+***Weapon Detection System using YOLOv5***
 
 This project implements a real-time weapon detection system using YOLOv5, designed to identify objects such as knives and handguns in images. The goal is to enhance surveillance and security by detecting potential threats in real-time.
 
 Despite initial challenges with confidence scores (around 0.6) and misclassifications, this project serves as a foundation for future improvements in model accuracy, dataset quality, and real-time deployment.
 
-Technologies Used
+**Technologies Used**
 
 YOLOv5 – Object detection model for real-time weapon recognition
 
@@ -17,7 +17,7 @@ PyTorch – For training and inference
 CUDA (optional) – For GPU acceleration
 
 
-Project Features
+**Project Features**
 
 Weapon Detection – Identifies knives and handguns in images
 
@@ -28,7 +28,7 @@ Alert System – Triggers a console alert if a weapon is detected
 Custom Dataset Training – Uses a curated dataset for improved accuracy
 
 
-Installation & Usage
+**Installation & Usage**
 
 1. Clone the repository
 
@@ -46,7 +46,7 @@ Installation & Usage
 
 
 
-Challenges & Issues
+**Challenges & Issues**
 
 Low Confidence Scores (around 0.6) due to a small dataset, insufficient training epochs, or potential class labeling inconsistencies
 
@@ -55,7 +55,7 @@ False Positives and False Negatives, leading to misclassifications or missed det
 Running on CPU results in slow inference, requiring GPU support for real-time processing
 
 
-Future Improvements
+**Future Improvements**
 
 Increase dataset size to improve model generalization
 
@@ -66,6 +66,6 @@ Add video stream support for real-time weapon detection in CCTV footage
 Deploy as a web application using Flask or FastAPI
 
 
-#**Conclusion**
+**Conclusion**
 
 This project is an ongoing effort to develop an effective weapon detection system using YOLOv5. While the current model struggles with accuracy, improvements in data, training, and deployment can make it more reliable for real-world use.
